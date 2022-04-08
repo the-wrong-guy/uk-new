@@ -30,10 +30,10 @@ function App() {
                   color: '#fff',
                   borderRadius: 100,
                   backgroundImage: bgColor,
-                  px: matches ? '18px' : '36px',
-                  py: matches ? '6px' : '13px',
+                  px: matches ? '18px' : '30px',
+                  py: matches ? '6px' : '10px',
                   display: 'inline-block',
-                  fontSize: matches ? '16px' : '36px',
+                  fontSize: matches ? '16px' : '26px',
                }}
             >
                ACTIVE TREND
@@ -110,7 +110,6 @@ function App() {
                px: '22px',
                height: 'calc(100vh - 317px)',
                overflowX: 'auto',
-               // width: '100%',
                position: 'relative',
             }}
          >

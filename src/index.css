@@ -37,9 +37,6 @@ th {
    white-space: nowrap;
 }
 
-th:first-child {
-   /* padding-left: 20px; */
-}
 th:last-child {
    text-align: center;
 }
@@ -60,16 +57,8 @@ td {
    color: rgba(255, 255, 255, 0.5);
    white-space: nowrap;
 }
-td:first-child {
-   /* border-top-left-radius: 15px;
-   border-bottom-left-radius: 15px;
-   padding-left: 20px; */
-}
 
 td:last-child {
-   /* border-bottom-right-radius: 15px;
-   border-top-right-radius: 15px;
-   padding-right: 20px; */
    text-align: center;
 }
 

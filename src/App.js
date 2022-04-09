@@ -11,6 +11,7 @@ import {
    useTheme,
 } from '@mui/material';
 import DatePicker from './components/DatePicker';
+import Pagination from '@mui/material/Pagination';
 
 const bgColor =
    'linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(180deg, #0094FF 0%, #0063AB 100%)';
@@ -21,7 +22,7 @@ function App() {
    const theme = useTheme();
    const matches = useMediaQuery(theme.breakpoints.down('sm'));
    return (
-      <Container sx={{ py: '41px' }}>
+      <Container sx={{ pt: '41px', pb: '30px' }}>
          <Box sx={{ display: 'flex', justifyContent: 'center' }}>
             <Typography
                align="center"
@@ -82,6 +83,7 @@ function App() {
                         '&::placeholder': {
                            color: 'rgba(255, 255, 255, 0.22)',
                         },
+                        color: '#fff',
                      },
                   }}
                   InputProps={{
@@ -101,6 +103,11 @@ function App() {
                         </InputAdornment>
                      ),
                   }}
+                  InputLabelProps={{
+                     style: {
+                        color: 'rgba(0, 148, 255, 1)',
+                     },
+                  }}
                />
             </Grid>
          </Grid>
@@ -108,7 +115,7 @@ function App() {
             sx={{
                bgcolor: 'rgba(34, 44, 68, 1)',
                px: '22px',
-               height: 'calc(100vh - 317px)',
+               minHeight: 'calc(100vh - 343px)',
                overflowX: 'auto',
                position: 'relative',
             }}
@@ -153,6 +160,9 @@ function App() {
                   </tr>
                </tbody>
             </table>
+         </Box>
+         <Box sx={{ display: 'flex', justifyContent: 'center', mt: 5 }}>
+            <Pagination count={7} color="primary" />
          </Box>
       </Container>
    );

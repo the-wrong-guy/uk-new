@@ -1,9 +1,8 @@
 import React from 'react';
 import TextField from '@mui/material/TextField';
 import DateAdapter from '@mui/lab/AdapterDayjs';
-import DesktopDatePicker from '@mui/lab/DesktopDatePicker';
 import LocalizationProvider from '@mui/lab/LocalizationProvider';
-import Pagination from '@mui/material/Pagination';
+import DateTimePicker from '@mui/lab/DateTimePicker';
 
 const primaryColor = 'rgba(0, 148, 255, 1)';
 
@@ -13,11 +12,10 @@ export default function DatePicker({ onChange, value, label }) {
    };
    return (
       <LocalizationProvider dateAdapter={DateAdapter}>
-         <DesktopDatePicker
+         <DateTimePicker
             disablePast
             showTodayButton
             todayText="Today"
-            inputFormat="MM/DD/YYYY"
             value={value}
             onChange={handleChange}
             label={label}
